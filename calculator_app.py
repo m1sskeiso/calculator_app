@@ -16,6 +16,14 @@ def divide(num1, num2):
         raise ValueError("Cannot divide by zero!")
     return num1 / num2
 
+# For choosing operation print
+print("\nSimple Calculator App")
+print("Choose operation:")
+print("1. Addition (+)")
+print("2. Subtraction (-)")
+print("3. Multiplication (*)")
+print("4. Division (/)")
+
 # Input of numbers
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
