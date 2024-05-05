@@ -36,3 +36,27 @@ def calculator():
             # Input of numbers
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
+
+            # Operations 
+            if choice == 1:
+                result = add(num1, num2)
+                operation = "Addition"
+            elif choice == 2:
+                result = subtract(num1, num2)
+                operation = "Subtraction"
+            elif choice == 3:
+                result = multiply(num1, num2)
+                operation = "Multiplication"
+            elif choice == 4:
+                result = divide(num1, num2)
+                operation = "Division"
+
+            print(f"\nResult of {operation}: {num1} {operation} {num2} = {result}")
+        
+        except ValueError as ve:
+            print("Error:", ve)
+            print("Please enter valid numbers.")
+            continue
+        
+# Run the calculator
+calculator()
