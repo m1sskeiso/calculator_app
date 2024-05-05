@@ -26,6 +26,13 @@ def calculator():
         print("3. Multiplication (*)")
         print("4. Division (/)")
 
-# Input of numbers
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+        try:
+            # Choosing Operation
+            choice = int(input("Enter your choice (1/2/3/4): "))
+            if choice < 1 or choice > 4:
+                print("Invalid choice. Please choose a number from 1 to 4.")
+                continue
+
+            # Input of numbers
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
