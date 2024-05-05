@@ -57,6 +57,21 @@ def calculator():
             print("Error:", ve)
             print("Please enter valid numbers.")
             continue
+
+        except Exception as e:
+            print("An error occurred:", e)
+            continue
+
+        try:
+            again = input("\nDo you want to try again? (yes/no): ").strip().lower()
+            if again != 'yes':
+                print("Thank you!")
+                break
+        except Exception as e:
+            print("An error occurred:", e)
+            print("Exiting...")
+            break
+
         
 # Run the calculator
 calculator()
